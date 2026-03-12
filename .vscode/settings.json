@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "3D Collab Project.sln"
+    "dotnet.defaultSolution": "3d-AGD-Collab-Mini-Project-version-2.0.sln"
 }
