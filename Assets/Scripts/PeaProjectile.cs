@@ -22,7 +22,7 @@ public class PeaProjectile : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             EnemyMovement enemy = collision.gameObject.GetComponent<EnemyMovement>();
             if (enemy != null)
