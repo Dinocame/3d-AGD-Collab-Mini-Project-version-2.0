@@ -1,30 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI; // Make sure to include this
 
 public class ZombieAnimation : MonoBehaviour
 {
     private Animator animator;
-    private Rigidbody rb;
+    private NavMeshAgent agent;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
-       
-        Vector3 horizontalVelocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+        // Get the horizontal speed of the agent
+        Vector3 horizontalVelocity = new Vector3(agent.velocity.x, 0, agent.velocity.z);
 
-        if (horizontalVelocity.magnitude > 0.1f)
-        {
-            animator.SetBool("isWalking", true);
-        }
-        else
-        {
-            animator.SetBool("isWalking", false);
-        }
+        // If moving, play walking animation
+        animator.SetBool("isWalking", horizontalVelocity.magnitude > 0.1f);
     }
 }
