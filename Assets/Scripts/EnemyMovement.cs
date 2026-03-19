@@ -9,6 +9,8 @@ public class EnemyMovement : MonoBehaviour
     public Transform player;
     private NavMeshAgent agent;
 
+    public float lives = 6f;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -17,5 +19,13 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         agent.SetDestination(player.position);
+    }
+    public float GetLives()
+    {
+        return lives;
+    }
+    public void LoseLives(float f)
+    {
+        lives -= f;
     }
 }

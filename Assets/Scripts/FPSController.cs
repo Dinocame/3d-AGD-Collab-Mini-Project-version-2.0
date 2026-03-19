@@ -5,6 +5,7 @@ public class FPSController : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 6f;
+    
     public float gravity = -9.81f;
     public float jumpHeight = 1.5f;
 
@@ -15,6 +16,10 @@ public class FPSController : MonoBehaviour
     private CharacterController controller;
     private float yVelocity;
     private float xRotation = 0f;
+
+    
+    [Header("Health")]
+    public float lives = 3f;
 
     void Start()
     {
@@ -68,4 +73,17 @@ public class FPSController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+    void OnControllerColliderHit(ControllerColliderHit hit)
+{
+    if (hit.gameObject.CompareTag("Enemy"))
+    {
+        Debug.Log("Hit an enemy!");
+
+        lives = lives - 1f;
+        if(lives <= 0f) {
+            
+        }
+
+    }
+}
 }
