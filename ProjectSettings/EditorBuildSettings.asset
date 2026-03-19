@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: f312b1950a3c4a3439c043ce2a1e5167
+  - enabled: 1
     path: Assets/Scenes/ZoeScene.unity
     guid: 1f312e96d4b3ef24c86f86b46e2fd867
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 417449b391d20744e86efea8d70f0592
   m_configObjects: {}
