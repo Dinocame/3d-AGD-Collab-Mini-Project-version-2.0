@@ -10,6 +10,8 @@ public class StopwatchUI : MonoBehaviour
     private float elapsedTime = 0f;
     private bool isRunning = true;
 
+    public static string Timer = "";
+
     void Update()
     {
         if (!isRunning) return;
@@ -33,5 +35,8 @@ public class StopwatchUI : MonoBehaviour
     {
         elapsedTime = 0f;
         UpdateTimerDisplay();
+    }
+    public string returnTime(){
+        return timerText.text;
     }
 }

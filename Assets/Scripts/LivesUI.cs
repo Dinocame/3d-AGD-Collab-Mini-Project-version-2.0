@@ -9,6 +9,7 @@ public class LivesUI : MonoBehaviour
     public TextMeshProUGUI livesText; // drag your TMP text here
     public int lives = 3;
     public RestartLevel restartLevelScript;
+    public StopwatchUI stopwatchScript;
 
     public float immunityDuration = 1.5f; // Duration of invincibility
     private bool isInvincible = false;
@@ -25,6 +26,11 @@ public class LivesUI : MonoBehaviour
         UpdateLivesUI();
         if(lives <= 0)
         {
+            if (stopwatchScript != null)
+            {
+                stopwatchScript.StopTimer();
+            }
+
             restartLevelScript.LoadSceneByIndex(2);
         }        
         else
