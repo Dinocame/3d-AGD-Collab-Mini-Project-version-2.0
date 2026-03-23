@@ -16,10 +16,13 @@ public class FPSController : MonoBehaviour
     private CharacterController controller;
     private float yVelocity;
     private float xRotation = 0f;
+    [Header("Lives")]
+    public LivesUI livesUI;
+
+
 
     
-    [Header("Health")]
-    public float lives = 3f;
+
 
     void Start()
     {
@@ -77,13 +80,7 @@ public class FPSController : MonoBehaviour
 {
     if (hit.gameObject.CompareTag("Enemy"))
     {
-        Debug.Log("Hit an enemy!");
-
-        lives = lives - 1f;
-        if(lives <= 0f) {
-            
-        }
-
+        livesUI.TakeDamage(1);       
     }
 }
 }
