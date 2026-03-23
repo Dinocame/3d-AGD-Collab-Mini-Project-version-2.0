@@ -6,7 +6,11 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
 
+    [SerializeField] private GameObject SpawnPoint;
+
     public Wave[] waves;
+
+    private int currentWaveIndex = 0;
 
     private void Update()
     {
@@ -15,13 +19,15 @@ public class WaveSpawner : MonoBehaviour
         if (countdown <= 0)
         {
             SpawnWave();
-        
         }
     }
 
-    private void SpawnWave()
+    private IEnumerator SpawnWave()
     {
-        
+        for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
+        {
+            Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+        }
     }
 
 }
@@ -29,5 +35,6 @@ public class WaveSpawner : MonoBehaviour
 [System.Serializable]
 public class Wave
 {
-   // public Evil[] enemies;
+   public Evil[] enemies;
+   public float timeToNextEnemy
 }

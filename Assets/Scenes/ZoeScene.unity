@@ -376,6 +376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c16a99ac880f44ba60766bdbb19326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdown: 0
+  waves:
+  - enemies:
+    - {fileID: 0}
+  - enemies: []
+  - enemies: []
 --- !u!1 &276363287
 GameObject:
   m_ObjectHideFlags: 0
