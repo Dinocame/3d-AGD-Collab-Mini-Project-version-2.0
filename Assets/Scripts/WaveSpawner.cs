@@ -29,5 +29,5 @@ public class WaveSpawner : MonoBehaviour
 [System.Serializable]
 public class Wave
 {
-    public Evil[] enemies;
+   // public Evil[] enemies;
 }
