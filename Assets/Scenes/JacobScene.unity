@@ -819,6 +819,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513348238}
   m_CullTransparentMesh: 1
+--- !u!4 &1951469346 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 365577037959378637, guid: a89a09c536004034e874d4088460e734, type: 3}
+  m_PrefabInstance: {fileID: 81281398}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8294569293542651529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -831,6 +836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3336362427266141431, guid: a5acda4f31b9708489a9d97a08d6ec93, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951469346}
     - target: {fileID: 3765814124571504449, guid: a5acda4f31b9708489a9d97a08d6ec93, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.6
@@ -870,10 +879,6 @@ PrefabInstance:
     - target: {fileID: 3765814124571504449, guid: a5acda4f31b9708489a9d97a08d6ec93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206006590008754014, guid: a5acda4f31b9708489a9d97a08d6ec93, type: 3}
-      propertyPath: player
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
