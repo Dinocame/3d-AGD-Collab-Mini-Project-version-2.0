@@ -170,7 +170,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   lifetime: 10
-  damage: 1
-  slowEnemy: 0
-  slowDuration: 2
-  slowFactor: 0.5
+  damage: 0
