@@ -4,12 +4,16 @@ public class PeaShooter : MonoBehaviour
 {
     public GameObject peaPrefab;
     public Transform firePoint;
+
     public float fireCooldown = 1f;
+    public float damage = 1f;
 
-    protected float nextFireTime = 0f;
+    private float nextFireTime = 0f;
 
-    protected virtual void Update()
+    void Update()
     {
+        if (transform.parent == null) return;
+
         if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
         {
             Shoot();
@@ -17,8 +21,11 @@ public class PeaShooter : MonoBehaviour
         }
     }
 
-    protected virtual void Shoot()
+    void Shoot()
     {
-        Instantiate(peaPrefab, firePoint.position, firePoint.rotation);
+        GameObject pea = Instantiate(peaPrefab, firePoint.position, firePoint.rotation);
+
+        PeaProjectile projectile = pea.GetComponent<PeaProjectile>();
+        projectile.damage = damage;
     }
 }
