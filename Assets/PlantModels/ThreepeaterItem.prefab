@@ -13049,7 +13049,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 727
+  m_VersionIndex: 733
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14471,7 +14471,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 254
+  m_VersionIndex: 260
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -27411,7 +27411,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 730
+  m_VersionIndex: 736
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -40351,7 +40351,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 730
+  m_VersionIndex: 736
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -53374,7 +53374,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 727
+  m_VersionIndex: 733
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -54796,7 +54796,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 257
+  m_VersionIndex: 263
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -55041,7 +55041,7 @@ GameObject:
   - component: {fileID: 4361935606238118212}
   m_Layer: 0
   m_Name: ThreepeaterItem
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56645,7 +56645,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 254
+  m_VersionIndex: 260
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -58207,7 +58207,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 257
+  m_VersionIndex: 263
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -58807,19 +58807,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1262945252607236077, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 254
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 1745790160541209368, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 316
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 3169903258636055548, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 316
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 3347153080565001928, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 727
+      value: 733
       objectReference: {fileID: 0}
     - target: {fileID: 3950731446922144055, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58833,9 +58833,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Peashooter
       objectReference: {fileID: 0}
+    - target: {fileID: 4145162557502892943, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4202042405785900583, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 316
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 4276027944743292871, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58847,15 +58851,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4411022749409477794, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 230
+      value: 236
       objectReference: {fileID: 0}
     - target: {fileID: 4893018241169079101, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 254
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 5985143897143881416, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 316
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 6728774299000100313, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58883,11 +58887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641519657200424321, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 727
+      value: 733
       objectReference: {fileID: 0}
     - target: {fileID: 7845158864633554628, guid: ee0f77c314794264a99d0b77a7bcae25, type: 3}
       propertyPath: m_VersionIndex
-      value: 204
+      value: 210
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

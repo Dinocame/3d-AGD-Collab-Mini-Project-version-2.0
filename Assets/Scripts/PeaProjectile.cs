@@ -20,7 +20,37 @@ public class PeaProjectile : MonoBehaviour
         rb.useGravity = false;
         rb.velocity = transform.forward * speed;
 
+        IgnorePlantAndPlayer();   // <-- added line
+
         Destroy(gameObject, lifetime);
+    }
+
+    void IgnorePlantAndPlayer()
+    {
+        Collider myCol = GetComponent<Collider>();
+
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject[] plants = GameObject.FindGameObjectsWithTag("Plant");
+
+        foreach (GameObject obj in players)
+        {
+            Collider[] colliders = obj.GetComponentsInChildren<Collider>();
+
+            foreach (Collider col in colliders)
+            {
+                Physics.IgnoreCollision(myCol, col);
+            }
+        }
+
+        foreach (GameObject obj in plants)
+        {
+            Collider[] colliders = obj.GetComponentsInChildren<Collider>();
+
+            foreach (Collider col in colliders)
+            {
+                Physics.IgnoreCollision(myCol, col);
+            }
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -60,7 +90,9 @@ public class PeaProjectile : MonoBehaviour
         {
             float originalSpeed = agent.speed;
             agent.speed *= slowFactor;
+
             yield return new WaitForSeconds(slowDuration);
+
             if (agent != null)
                 agent.speed = originalSpeed;
         }
