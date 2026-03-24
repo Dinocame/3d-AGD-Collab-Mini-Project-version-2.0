@@ -18,7 +18,8 @@ public class WaveSpawner : MonoBehaviour
 
         if (countdown <= 0)
         {
-            SpawnWave();
+            countdown = waves[currentWaveIndex].timeToNextWave;
+            StartCoroutine(SpawnWave());
         }
     }
 
@@ -26,7 +27,9 @@ public class WaveSpawner : MonoBehaviour
     {
         for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
         {
-            Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+            Instantiate(waves[currentWaveIndex].enemies[i], SpawnPoint.transform);
+
+            yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
         }
     }
 
@@ -36,5 +39,6 @@ public class WaveSpawner : MonoBehaviour
 public class Wave
 {
    public Evil[] enemies;
-   public float timeToNextEnemy
+   public float timeToNextEnemy;
+   public float timeToNextWave;
 }
