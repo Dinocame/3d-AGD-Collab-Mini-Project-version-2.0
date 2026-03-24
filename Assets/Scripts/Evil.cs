@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Evil: MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        waveSpawner = GetComponentInParent<WaveSpawner>();
     }
 
-    // Update is called once per frame
+    [SerializeField] private float speed;
+    
+    private WaveSpawner waveSpawner;
+
+    private float countdown = 5f;
+    
     void Update()
     {
-        
+        transform.Translate(transform.forward * speed * Time.deltaTime);
+
+        countdown -= Time.deltaTime;
+
+        if (countdown <= 0)
+        {
+            Destroy(gameObject);
+
+            waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
+        }   
     }
 }
