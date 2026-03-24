@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8173329321805014504}
   m_Layer: 0
   m_Name: FirePea
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.363, y: 0.905, z: 0.2749}
-  m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 48f70bf59e32af44ca2ea782b577a259, type: 2}
+  - {fileID: 2100000, guid: 58444451413adf94095abbb811dfaa34, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -170,4 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   lifetime: 10
-  damage: 0
+  damage: 2
+  slowEnemy: 0
+  slowDuration: 2
+  slowFactor: 0.5
