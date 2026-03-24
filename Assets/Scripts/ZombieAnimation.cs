@@ -6,7 +6,7 @@ public class ZombieAnimation : MonoBehaviour
     private Animator animator;
     private NavMeshAgent agent;
 
-    private bool isAttacking = false; 
+    private bool isAttacking = false; // prevents spam
 
     void Start()
     {
@@ -16,10 +16,6 @@ public class ZombieAnimation : MonoBehaviour
 
     void Update()
     {
-        if (agent.isStopped)
-        {
-            animator.SetBool("isWalking", false);
-        }
         if (isAttacking) return; // stop walking while attacking
 
         Vector3 horizontalVelocity = new Vector3(agent.desiredVelocity.x, 0, agent.desiredVelocity.z);
@@ -35,7 +31,6 @@ public class ZombieAnimation : MonoBehaviour
         isAttacking = true;
         animator.SetTrigger("Attack");
 
-        // Optional: stop movement during attack
         agent.isStopped = true;
 
         // Reset after attack animation (~1 sec, adjust as needed)
