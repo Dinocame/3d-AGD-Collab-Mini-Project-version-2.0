@@ -76,11 +76,5 @@ public class FPSController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
-    void OnControllerColliderHit(ControllerColliderHit hit)
-{
-    if (hit.gameObject.CompareTag("Enemy"))
-    {
-        livesUI.TakeDamage(1);       
-    }
-}
+    
 }
