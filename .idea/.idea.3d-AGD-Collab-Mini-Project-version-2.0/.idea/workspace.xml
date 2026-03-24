@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="374b1dd9-5916-4b65-bd6f-46b810cae57f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3d-AGD-Collab-Mini-Project-version-2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3d-AGD-Collab-Mini-Project-version-2.0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773777719422</updated>
       <workItem from="1773777721623" duration="8000" />
-      <workItem from="1774384643926" duration="789000" />
+      <workItem from="1774384643926" duration="1339000" />
     </task>
     <servers />
   </component>
