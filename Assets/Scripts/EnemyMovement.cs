@@ -6,13 +6,14 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform player;
+    private Transform player;
     private NavMeshAgent agent;
 
     public float lives = 6f;
 
     void Start()
     {
+        player =  GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 

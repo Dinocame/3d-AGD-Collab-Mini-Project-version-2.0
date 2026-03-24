@@ -23,8 +23,6 @@ public class Evil: MonoBehaviour
 
         if (countdown <= 0)
         {
-            Destroy(gameObject);
-
             waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
         }   
     }

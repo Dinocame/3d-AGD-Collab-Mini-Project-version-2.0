@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 1297736000207661841}
   m_Layer: 0
   m_Name: Hayk's player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,6 +265,7 @@ MonoBehaviour:
   jumpHeight: 1.5
   mouseSensitivity: 1000
   playerCamera: {fileID: 4689591706776021087}
+  livesUI: {fileID: 0}
 --- !u!114 &1297736000207661841
 MonoBehaviour:
   m_ObjectHideFlags: 0
