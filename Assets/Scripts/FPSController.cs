@@ -80,7 +80,13 @@ public class FPSController : MonoBehaviour
 {
     if (hit.gameObject.CompareTag("Enemy"))
     {
-        livesUI.TakeDamage(1);       
+        livesUI.TakeDamage(1);    
+        // Tell zombie to attack
+        ZombieAnimation zombie = hit.gameObject.GetComponent<ZombieAnimation>();
+        if (zombie != null)
+        {
+            zombie.Attack();
+        }   
     }
 }
 }
