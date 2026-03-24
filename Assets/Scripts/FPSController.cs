@@ -76,17 +76,5 @@ public class FPSController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
-    void OnControllerColliderHit(ControllerColliderHit hit)
-{
-    if (hit.gameObject.CompareTag("Enemy"))
-    {
-        livesUI.TakeDamage(1);    
-        // Tell zombie to attack
-        ZombieAnimation zombie = hit.gameObject.GetComponent<ZombieAnimation>();
-        if (zombie != null)
-        {
-            zombie.Attack();
-        }   
-    }
-}
+    
 }

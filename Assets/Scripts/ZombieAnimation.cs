@@ -16,6 +16,10 @@ public class ZombieAnimation : MonoBehaviour
 
     void Update()
     {
+        if (agent.isStopped)
+        {
+            animator.SetBool("isWalking", false);
+        }
         if (isAttacking) return; // stop walking while attacking
 
         Vector3 horizontalVelocity = new Vector3(agent.desiredVelocity.x, 0, agent.desiredVelocity.z);
