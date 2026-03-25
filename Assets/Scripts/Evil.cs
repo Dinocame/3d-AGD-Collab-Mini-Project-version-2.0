@@ -17,7 +17,7 @@ public class Evil: MonoBehaviour
     
     void Update()
     {
-        transform.Translate(transform.forward * speed * Time.deltaTime);
+        
 
         countdown -= Time.deltaTime;
 
