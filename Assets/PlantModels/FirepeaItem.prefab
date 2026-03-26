@@ -20332,7 +20332,7 @@ MonoBehaviour:
   peaPrefab: {fileID: 5369833349123361479, guid: 5a07f676dc6c316489952e61457f5416, type: 3}
   firePoint: {fileID: 3481107299271399557}
   fireCooldown: 1
-  damage: 2
+  damage: 10
   slowEnemy: 0
   slowDuration: 2
   slowFactor: 0.5
